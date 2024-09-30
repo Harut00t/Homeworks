@@ -21,3 +21,14 @@ for letter in plain_text:
 
 print(f"original message : {plain_text}")
 print(f"encrypted message : {cipher_text}")
+
+#Decryption
+cipher_text = input("Please enter a message to decrypt: ")
+plain_text = ""
+
+for letter in cipher_text:
+    index = key.index(letter)
+    plain_text += chars[index]
+
+print(f"decrypted message : {plain_text}")
+print(f"original message : {cipher_text}")
